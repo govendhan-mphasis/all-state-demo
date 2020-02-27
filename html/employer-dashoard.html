@@ -31,6 +31,7 @@
 
     <link href="../css/footer.css" rel="stylesheet" />
     <link href="../css/employer-dashboard.css" rel="stylesheet" />
+    <link href="../css/modal.css" rel="stylesheet" />
 
     <link
       href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&display=swap"
@@ -115,10 +116,16 @@
               </div>
               <div class="row dashed-icn-wrapper">
                 <div class="col-3 dashed-icn-blk">
-                  <div class="dashed-icn-img">
-                    <img src="../images/icon_billing_and_payments.png" />
-                  </div>
-                  <div class="dashed-icn-label">Billing and Payments</div>
+                  <a
+                    href="demographic.html"
+                    data-target="#billingPaymentsModal"
+                    data-toggle="modal"
+                  >
+                    <div class="dashed-icn-img">
+                      <img src="../images/icon_billing_and_payments.png" />
+                    </div>
+                    <div class="dashed-icn-label">Billing and Payments</div>
+                  </a>
                 </div>
                 <div class="col-3 dashed-icn-blk">
                   <div class="dashed-icn-img">
@@ -176,5 +183,123 @@
         </div>
       </div>
     </footer>
+    <!-- Modal 4 -->
+    <div
+      class="allstate-modal modal fade"
+      id="billingPaymentsModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="billingPaymentsModalLabel">
+              Billing and Payments
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true"
+                ><img src="../images/icon_close.png"
+              /></span>
+            </button>
+          </div>
+          <div class="modal-body customModal4">
+            <div class="billingPyamentsGrid">
+              <table class="table customTable1">
+                <tbody>
+                  <tr>
+                    <td>4800000501 - Mar 2020</td>
+                    <td class="text-left">
+                      <img src="../images/icon_PDF.png" />&nbsp;
+                      <small>28kb</small>
+                    </td>
+                    <td>
+                      <i class="text-danger1">Payment due on 05 March 2020</i>
+                    </td>
+                    <td><a href="javascript:void(0)">Download Statement</a></td>
+                    <td class="text-center">
+                      <button
+                        type="button"
+                        class="Rounded-Rectangle-4 Make-Payment"
+                      >
+                        Make Payment
+                      </button>
+                    </td>
+                    <td>
+                      <button
+                        type="button"
+                        class="Rounded-Rectangle-5 Enrol-for-Auto-Pay"
+                        data-dismiss="modal"
+                      >
+                        Enrol for Auto Pay
+                      </button>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>4800000485 - Dec 2019</td>
+                    <td class="text-left">
+                      <img src="../images/icon_PDF.png" />&nbsp;
+                      <small>27kb</small>
+                    </td>
+                    <td></td>
+                    <td><a href="javascript:void(0)">Download Statement</a></td>
+                    <td class="text-center"><i>Paid, thank you!</i></td>
+                    <td></td>
+                  </tr>
+
+                  <tr>
+                    <td>4800000468 - July 2019</td>
+                    <td class="text-left">
+                      <img src="../images/icon_PDF.png" />&nbsp;
+                      <small>29kb</small>
+                    </td>
+                    <td></td>
+                    <td><a href="javascript:void(0)">Download Statement</a></td>
+                    <td class="text-center"><i>Paid, thank you!</i></td>
+                    <td></td>
+                  </tr>
+
+                  <tr>
+                    <td>4800000462 - July 2019</td>
+                    <td class="text-left">
+                      <img src="../images/icon_PDF.png" />&nbsp;
+                      <small>26kb</small>
+                    </td>
+                    <td></td>
+                    <td><a href="javascript:void(0)">Download Statement</a></td>
+                    <td class="text-center"><i>Paid, thank you!</i></td>
+                    <td></td>
+                  </tr>
+
+                  <tr>
+                    <td>4800000331 - Mar 2019</td>
+                    <td class="text-left">
+                      <img src="../images/icon_PDF.png" />&nbsp;
+                      <small>32kb</small>
+                    </td>
+                    <td></td>
+                    <td><a href="javascript:void(0)">Download Statement</a></td>
+                    <td class="text-center"><i>Paid, thank you!</i></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="text-center footerBtn">
+                <button type="button" class="btn btn-primary">
+                  View Past Statements
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

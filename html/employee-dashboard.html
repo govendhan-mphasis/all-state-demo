@@ -10,11 +10,10 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
       integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
@@ -25,13 +24,43 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
-    <link href="../css/common.css" rel="stylesheet" />
+ <script type="text/javascript">
+      function makeSaveChanges() {
+        var reqBody = {
+          address1: $("#address1").val(),
+          address2: $("#address2").val(),
+          zipcode: $("#zipcode").val(),
+          city: $("#city").val()
+        };
+
+        $.ajax({
+          type: "POST",
+          url: "localhost:3000/makesave",
+          // The key needs to match your method's input parameter (case-sensitive).
+          data: JSON.stringify(reqBody),
+          cache: false, 
+          contentType: "application/json; charset=utf-8",
+          dataType: "json",
+                      crossDomain:true,
+
+           headers: {
+            'Access-Control-Allow-Origin': '*',
+          },
+          success: function(data) {
+            alert(data);
+          },
+          failure: function(errMsg) {
+            alert(errMsg);
+          }
+        });
+      }
+    </script>    <link href="../css/common.css" rel="stylesheet" />
 
     <link href="../css/landingHeader.css" rel="stylesheet" />
 
     <link href="../css/footer.css" rel="stylesheet" />
     <link href="../css/employee-dashboard.css" rel="stylesheet" />
-    <link href="../css/demographic-modal.css" rel="stylesheet" />
+    <link href="../css/modal.css" rel="stylesheet" />
 
     <link
       href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&display=swap"
@@ -150,7 +179,11 @@
                   <div class="col-12">
                     <div class="row dashed-icn-wrapper">
                       <div class="col-3 dashed-icn-blk">
-                        <a href="#">
+                        <a
+                          href="demographic.html"
+                          data-target="#exampleModal1"
+                          data-toggle="modal"
+                        >
                           <div class="dashed-icn-img">
                             <img
                               src="../images/icon_view_policy_benefits.png"
@@ -162,8 +195,12 @@
                         </a>
                       </div>
                       <div class="col-3 dashed-icn-blk">
-                        <a href="#"
-                          ><div class="dashed-icn-img">
+                        <a
+                          href="demographic.html"
+                          data-target="#exampleModal2"
+                          data-toggle="modal"
+                        >
+                          <div class="dashed-icn-img">
                             <img src="../images/icon_claims_history.png" />
                           </div>
                           <div class="dashed-icn-label">
@@ -184,7 +221,7 @@
                       <div class="col-3 dashed-icn-blk">
                         <a
                           href="demographic.html"
-                          data-target="#demographicModal"
+                          data-target="#exampleModal"
                           data-toggle="modal"
                         >
                           <div class="dashed-icn-img">
@@ -226,13 +263,13 @@
         </div>
       </div>
     </footer>
-    <!-- demographic -->
+    <!-- Modal 1-->
     <div
       class="allstate-modal modal fade"
-      id="demographicModal"
+      id="exampleModal"
       tabindex="-1"
       role="dialog"
-      aria-labelledby="demographicModal"
+      aria-labelledby="exampleModalLabel"
       aria-hidden="true"
     >
       <div class="modal-dialog" role="document">
@@ -360,7 +397,7 @@
                             type="text"
                             class="form-control"
                             id="address1"
-                            placeholder="101 E Lake Avenue"
+                            value="101 E Lake Avenue"
                           />
                         </div>
                         <div class="form-group col-md-4">
@@ -369,7 +406,7 @@
                             type="text"
                             class="form-control"
                             id="address2"
-                            placeholder=""
+                            value=""
                           />
                         </div>
                         <div class="form-group col-md-2">
@@ -378,7 +415,7 @@
                             type="text"
                             class="form-control"
                             id="zipcode"
-                            placeholder="21212"
+                            value="21212"
                           />
                         </div>
                         <div class="form-group col-md-2">
@@ -387,7 +424,7 @@
                             type="text"
                             class="form-control"
                             id="city"
-                            placeholder="Baltimore"
+                            value="Baltimore"
                           />
                         </div>
                       </div>
@@ -579,10 +616,174 @@
               <button
                 type="button"
                 class="btn btn-primary"
-                data-dismiss="modal"
+                onclick="makeSaveChanges()"
               >
                 Save changes
               </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div
+      class="modal fade"
+      id="exampleModal1"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLongTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header" style="padding-bottom:0">
+            <h5 class="modal-title" id="exampleModalLongTitle">
+              View Policy Benefits
+            </h5>
+
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true"
+                ><img src="../images/icon_close.png"
+              /></span>
+            </button>
+          </div>
+
+          <div class="modal-header" style="padding-top:0;font-weight:500">
+            <span>Certificate No. 48000000501</span>
+          </div>
+
+          <div class="modal-body">
+            <div class="bodyContainer">
+              <h5>Benefits and Amounts</h5>
+              <table class="table customTable">
+                <thead class="thead-dark customThead-dark">
+                  <tr>
+                    <th scope="col">
+                      INITIAL CRITICAL ILLNESS BENEFITS
+                      <span class="text-danger">*</span>
+                    </th>
+                    <th scope="col" align="right">OPTION 1</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Heart Attack (100%)</td>
+                    <td>$10,000</td>
+                  </tr>
+                  <tr>
+                    <td>Stroke (100%)</td>
+                    <td>$10,000</td>
+                  </tr>
+                  <tr>
+                    <td>Coronary Artery Bypass Surgery (25%)</td>
+                    <td>$2,500</td>
+                  </tr>
+                  <tr>
+                    <td>Major Organ Transplant (100%)</td>
+                    <td>$10,000</td>
+                  </tr>
+                  <tr>
+                    <td>End Stage Renal Failure (100%)</td>
+                    <td>$10,000</td>
+                  </tr>
+                  <tr>
+                    <td>Waiver of Premium (employee only)</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <th scope="col" colspan="2" class="customFeature">
+                      Additional Features
+                    </th>
+                  </tr>
+                  <tr>
+                    <td>Pre-Existing Condition Limitation Applies</td>
+                    <td>Yes</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <p>
+                <span class="text-danger">*</span> Insured employees are
+                eligible for 100% of the benefit amounts listed; covered
+                dependents are eligible for 50% of the employee benefit amount.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div
+      class="modal fade"
+      id="exampleModal2"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLongTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">
+              Claims History
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true"
+                ><img src="../images/icon_close.png"
+              /></span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="bodyContainer">
+              <table class="table customTable">
+                <thead class="thead-dark customThead-modal3">
+                  <tr>
+                    <th scope="col">CLAIM NUMBER</th>
+                    <th scope="col">CLAIMANT</th>
+                    <th scope="col">TYPE OF LOSS</th>
+                    <th scope="col">STATUS</th>
+                    <th scope="col" class="text-left">EOB</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>000101</td>
+                    <td>Brycee Lee</td>
+                    <td>Heart Attack</td>
+                    <td>Open</td>
+                    <td class="text-left">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>000102</td>
+                    <td>Brycee Lee</td>
+                    <td>Wellness</td>
+                    <td>Declined</td>
+                    <td class="text-left">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>000103</td>
+                    <td>Brycee Lee</td>
+                    <td>Stroke</td>
+                    <td>Closed</td>
+                    <td class="text-left">
+                      <img src="../images/icon_PDF.png" />&nbsp;
+                      <small>23kb</small>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
