@@ -1,0 +1,461 @@
+nav > .nav.nav-tabs {
+  border: none;
+  background: #ffffff;
+  border-radius: 10px;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #0077c0;
+}
+nav > div a.nav-item.nav-link,
+nav > div a.nav-item.nav-link.active {
+  max-width: 8rem;
+  border: none;
+  padding: 1rem 0rem;
+  background: #ffffff;
+  border-radius: 0;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #0077c0;
+  border-radius: 10px 10px 0 0;
+}
+
+.tab-content {
+  background: #dbe8ec;
+  line-height: 25px;
+  border: 1px solid #ddd;
+  padding: 30px 25px;
+}
+
+nav > div a.nav-item.nav-link:hover,
+nav > div a.nav-item.nav-link:focus {
+  border: none;
+  background: #0077c0;
+  color: #fff;
+  transition: background 0.2s linear;
+}
+
+nav > div a.nav-item.nav-link.active {
+  background: #dbe8ec;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #333333;
+}
+.tab-title,
+.tab-img {
+  text-align: center;
+  display: block;
+}
+
+.dash-box {
+  min-height: 5rem;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+.dash-box-title {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #333333;
+  padding: 1rem;
+}
+.dash-box-content {
+  padding: 0 1rem 1rem 1rem;
+}
+.dash-box-meter {
+  margin: 1.5rem 0;
+  min-height: 80px;
+  border-radius: 4px;
+  background-color: #f5f5f5;
+}
+
+.dash-box-pre-green {
+  border-left: 6px solid #4ac764;
+}
+.dash-box-pre-blue {
+  border-left: 6px solid #277cbd;
+}
+.dash-box-pre-red {
+  border-left: 6px solid #b52673;
+}
+.dash-box-meter-unit {
+  min-width: 8rem;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #333333;
+  padding: 1rem 1rem;
+  display: inline-block;
+  vertical-align: super;
+}
+
+.dash-box-meter-value {
+  font-family: Roboto;
+  font-size: 48px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #333333;
+  display: inline-block;
+  margin: 0.75rem 0rem;
+}
+
+.dash-box-pie,
+dash-box-bar {
+  text-align: center;
+  padding: 3rem;
+}
+
+.dash-box-col-volume {
+  border-radius: 5px;
+  background-color: #ffffff;
+  text-align: center;
+}
+.dash-box-col-price {
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #333333;
+}
+
+.dash-box-pie-cont {
+  padding: 0 1.7rem;
+}
+.dash-box-bot-green {
+  border-bottom: solid 4px #4ac764;
+}
+.dash-box-bot-blue {
+  border-bottom: 4px solid #16bbdd;
+}
+.dash-box-bot-red {
+  border-bottom: 4px solid #bb6c9f;
+}
+
+.dash-box-bar-val {
+  font-family: Roboto;
+  font-size: 48px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #333333;
+}
+
+.dash-box-bar-perc {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #333333;
+  padding: 1rem 0.5rem;
+}
+
+.dash-box-bar-perc-val {
+  vertical-align: super;
+  padding: 0.5rem;
+}
+.dash-box-bar {
+  text-align: center;
+  background: #f5f5f5;
+  padding: 2.75rem 0;
+  border-radius: 5px;
+  margin: 1rem -1rem -1rem -1rem;
+}
+.dash-box-bar-cont {
+  padding: 1rem 0;
+}
+
+.bor-left {
+  border-left: 1px solid #e1e1e1;
+}
+.bor-right {
+  border-right: 1px solid #e1e1e1;
+}
+
+.quote-wrap {
+  background-color: #1e2e5d;
+}
+
+.renewal-wrap {
+  background-color: #b52673;
+}
+
+.renewal-wrap .dash-box-title,
+.quote-wrap .dash-box-title {
+  color: #ffffff;
+}
+.q-cont {
+  display: inline-block;
+  padding-left: 0.69rem;
+}
+.q-pro {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+  display: block;
+}
+
+.q-val {
+  font-family: Roboto;
+  font-size: 42px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+  display: block;
+}
+
+.table thead th {
+  background-color: #fbfbfb;
+  border-top: 1px solid #e4e9ea;
+  border-bottom: 1px solid #e4e9ea;
+}
+.t-th {
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #333333;
+}
+/* .t-dba {
+  width: 135px;
+}
+.t-c-id {
+  width: 59px;
+}
+.t-ind-cla {
+  width: 166px;
+}
+.t-l-name {
+  width: 135px;
+}
+.t-sit-sta {
+  width: 88px;
+} */
+.tr-l-name {
+  width: 135px;
+  height: 462px;
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #0077c0;
+}
+.dash-blk {
+  padding: 1rem;
+}
+
+td {
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #666666;
+}
+
+.table-content {
+  height: 450px;
+  overflow: auto;
+}
+/* width */
+.table-content::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.table-content::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+.table-content::-webkit-scrollbar-thumb {
+  background: #cccccc;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.table-content::-webkit-scrollbar-thumb:hover {
+  background: #666666;
+}
+
+.dash-search-form-wrapper {
+  display: table-cell;
+  width: 50%;
+  padding: 2rem 0rem;
+  vertical-align: top;
+  min-height: 1px;
+  position: relative;
+}
+
+.dash-search--form {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.dash-search--form input {
+  font-size: 14px;
+  padding-left: 8px;
+  box-sizing: border-box;
+  height: 50px;
+  width: 330px;
+  border-radius: 5px;
+  border: solid 1px #d7d7d7;
+  background-color: #ffffff;
+}
+
+.dash-search--form input:focus {
+  outline: none !important;
+  border-color: #0096d6;
+  box-shadow: 0 0 5px #94d9f2;
+}
+
+.table-content a,
+.table-content a:focus,
+.table-content a:hover .table-content a:visited {
+  color: #0c96d4;
+  text-decoration: none;
+}
+
+.table-content table {
+  border: solid 1px #e1e1e1;
+}
+
+.comm-cont {
+  display: inline-block;
+}
+
+.com-tit {
+  display: block;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #333333;
+}
+.com-date {
+  display: block;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #999999;
+  padding: 0.25rem 0;
+}
+
+.comm-text {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #333333;
+}
+
+.act-text {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #0077c0;
+}
+
+.ver-aln-mid {
+  vertical-align: middle;
+}
+.communication-title {
+  border-bottom: solid 1px #e2e2e2;
+}
+.communication-wrap {
+  border-bottom: solid 1px #e2e2e2;
+  padding: 1rem 0;
+}
+
+.communication-content a,
+.communication-content a:focus,
+.communication-content a:hover .communication-content a:visited {
+  color: #0c96d4;
+  text-decoration: underline;
+}
+
+.view-all {
+  padding: 1rem;
+}

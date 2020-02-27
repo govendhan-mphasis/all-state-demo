@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Broker Login Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <link href="../css/common.css" rel="stylesheet" />
+
+    <link href="../css/landingHeader.css" rel="stylesheet" />
+    <link href="../css/broker-login.css" rel="stylesheet" />
+
+    <link href="../css/footer.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container wrapper">
+        <div class="row grid header-grid">
+          <div class="col-2">
+            <a
+              href="https://www.allstatebenefits.com/Home"
+              title="Go to Home page."
+              class="logo"
+            >
+              <img
+                src="../images/Allstate_Logo_Header.png"
+                alt="Allstate Benefits"
+              />
+            </a>
+          </div>
+          <div class="col-10">
+            <ul class="primaryNav clearfix">
+              <li>
+                <a href="https://www.allstatebenefits.com/About/Index"
+                  ><img src="../images/Header_Icon_Tollfree.png"
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.allstatebenefits.com/Contact"
+                  >(800) 521-3535</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="main-container">
+      <div class="broker-banner-wrapper">
+        <div class="broker-banner broker-landing-banner">
+          <div class="container broker-landing-banner-container">
+            <div class="row brkr-login-grid">
+              <div class="offset-5 col-6">
+                <div class="brkr-banner-title">Welcome to Broker Portal</div>
+
+                <div class="brkr-banner-sub-title">
+                  This application gives you all information about your policies
+                  and funds. Also use it for other related activities such as
+                  change of address etc.
+                </div>
+                <div class="login-form-wrapper cf">
+                  <form
+                    name="frmLogin"
+                    method="post"
+                    onsubmit="return Validate(this);"
+                    class="agentAccessLogin--form"
+                  >
+                    <div class="cf">
+                      <span class="input_title"></span>
+                      <input
+                        tabindex="1"
+                        id=""
+                        name="txtUser"
+                        type="text"
+                        autocomplete="off"
+                        maxlength="10"
+                        class="txtBox"
+                        placeholder="User Name"
+                      />
+                    </div>
+
+                    <div class="cf">
+                      <span class="input_title"></span>
+                      <input
+                        id="Password1"
+                        tabindex="2"
+                        name="txtPWD"
+                        type="password"
+                        autocomplete="off"
+                        maxlength="10"
+                        class="txtBox"
+                        placeholder="Password"
+                      />
+                    </div>
+                    <div class="login-btn-wrapper">
+                      <button
+                        type="button"
+                        class="login-btn"
+                        onclick="location.href = '../html/dashboard.html';"
+                      >
+                        Login
+                      </button>
+                    </div>
+
+                    <ul class="login--links cf">
+                      <li>
+                        <a
+                          href="https://access.allstatebenefits.com/RequestUsername.asp"
+                          class="Tahoma12Orange"
+                          >Forgot Username?</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://access.allstatebenefits.com/RequestPassword.asp"
+                          class="Tahoma12Orange"
+                          >Forgot Password?</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://access.allstatebenefits.com/Troubleshoot.asp"
+                          class="Tahoma12Orange"
+                          >Trouble logging in?</a
+                        >
+                      </li>
+                    </ul>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class=" row ">
+          <div class="dyk col-12">Did You Know?</div>
+        </div>
+        <div class=" row">
+          <div class="col-4">
+            <div class="dyk--description">
+              62.2% of new business received is processed via Automated
+              Underwriting?
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="dyk--description">
+              Visit our AccessNY Allstate Benefits website at:
+              AccessNY.AllstateBenefits.com
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="dyk--description">
+              The Access Allstate Benefits website only supports Internet
+              Explorer (IE) 8 and above and Chrome browsers.
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="legal-notice">
+            <div class="legal-title">
+              Legal Disclaimer
+            </div>
+            <div class="legal-content">
+              By logging in and accessing this website, I represent and warrant
+              that I have read, understand and agree to abide by AB's Electronic
+              Service Agreement ("ESA"), which governs my use of AB's electronic
+              services. My access and any information viewed and used will be
+              for purposes as permitted under HIPAA and applicable state laws. I
+              acknowledge and agree that AB may update the ESA from time to time
+              by posting a revised version on this page and my continued use of
+              this website shall constitute agreement to any such updates. This
+              ESA supplements the other agreements I have with AB.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container wrapper">
+        <!-- Return to Top -->
+        <span id="return-to-top" style="display: none;"
+          ><i class="icon icon--back--to--top"></i
+        ></span>
+        <div class="row grid footer-grid">
+          <div class="col-12 cc center-cc">
+            &copy; 2020 Allstate Benefits.
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

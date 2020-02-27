@@ -1,0 +1,166 @@
+.allstate-modal .modal{
+    font-family: 'Roboto';
+}
+
+.modal-content {
+    background: #e8e8e8;
+}
+
+.modal-dialog {
+    max-width: 1024px;
+}
+
+.modal-header, .modal-body, .modal-footer {
+    padding: 30px;
+}
+
+.modal-header {
+    border: 0;
+    padding: 22px 30px 10px;
+}
+
+.modal-header .close {
+    padding: 0.7rem 0.3rem;
+    outline: 0;
+    opacity: unset;
+}
+
+.modal-body {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.modal-footer {
+    padding-top: 0;
+    border: 0;
+}
+
+.modal-footer .btns-wrapper {
+    background: #fbfbfb;
+    text-align: center;
+    width: 100%;
+    padding: 30px 0;
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+    border-top: 1px #e1e1e1 solid; 
+}
+
+.modal-title {
+    font-size: 24px;
+    font-family: 'Roboto';
+    color: #b52673;
+    font-weight: 700;
+}
+
+.nav-tabs {
+    background: #1e2e5d;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+}
+
+.nav-item {
+    padding: 30px 30px 0;
+    margin: 0 !important;
+}
+
+.nav-tabs .nav-link {
+    border: 0;
+    border-radius: 0;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.13;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff !important;
+    padding: 0 0 30px;
+    display: inline-flex;
+}
+
+.nav-link span {
+    white-space: pre-line;
+}
+
+.tab-ico {
+    margin-right: 0.9rem;
+}
+
+.nav-tabs .nav-link.active {
+    background: #1e2e5d;
+    border-bottom: 5px #e979b5 solid;
+}
+
+.tab-content {
+    background: #fbfbfb;
+    padding: 30px;
+}
+
+.btn {
+    height: 60px;
+  border-radius: 30px;
+  background-color: #0077c0;
+  padding: 0 3.826rem;
+  font-size: 18px;
+  box-shadow: none !important;
+}
+
+.btn-secondary {
+    border: solid 1px #b7b7b7;
+    background-color: #ffffff;
+    color: #666666
+}
+
+form section {
+    margin-bottom: 25px;
+}
+form section.sub-section {
+margin-bottom: 15px;
+}
+
+form section span.section-title, form section span.section-subtitle {
+    color: #1e2e5d;
+    font-size: 18px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+form section span.section-subtitle {
+    font-size: 16px;
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.13;
+    letter-spacing: normal;
+    text-align: left;
+    color: #333333;
+}
+
+.form-group label {
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.29;
+    letter-spacing: normal;
+    text-align: left;
+    color: #666666;
+}
+
+.form-control {
+    height: 45px;
+  border-radius: 4px;
+  border: solid 1px #cccccc;
+  background-color: #ffffff;
+  color: #666666;
+  font-size: 14px;
+    font-weight: normal;
+}
+
+select.form-control {
+    height: 45px !important;
+}

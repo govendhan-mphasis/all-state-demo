@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Employer Login Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <link href="../css/common.css" rel="stylesheet" />
+
+    <link href="../css/landingHeader.css" rel="stylesheet" />
+    <link href="../css/employer-login.css" rel="stylesheet" />
+
+    <link href="../css/footer.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container wrapper">
+        <div class="row grid header-grid">
+          <div class="col-2">
+            <a
+              href="https://www.allstatebenefits.com/Home"
+              title="Go to Home page."
+              class="logo"
+            >
+              <img
+                src="../images/Allstate_Logo_Header.png"
+                alt="Allstate Benefits"
+              />
+            </a>
+          </div>
+          <div class="col-10">
+            <ul class="primaryNav clearfix">
+              <li>
+                <a href="https://www.allstatebenefits.com/About/Index"
+                  ><img src="../images/Header_Icon_Tollfree.png"
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.allstatebenefits.com/Contact"
+                  >(800) 521-3535</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="main-container">
+      <div class="employer-banner-wrapper">
+        <div class="employer-banner employer-landing-banner">
+          <div class="container employer-landing-banner-container">
+            <div class="row empr-login-grid">
+              <div class="offset-5 col-6">
+                <div class="empr-banner-title">Welcome to Employer Portal</div>
+
+                <div class="empr-banner-sub-title">
+                  A secured centralized resource centreto manage your employees’
+                  insurance requirements.
+                </div>
+                <div class="login-form-wrapper cf">
+                  <form
+                    name="frmLogin"
+                    method="post"
+                    onsubmit="return Validate(this);"
+                    class="agentAccessLogin--form"
+                  >
+                    <div class="cf">
+                      <span class="input_title"></span>
+                      <input
+                        tabindex="1"
+                        id=""
+                        name="txtUser"
+                        type="text"
+                        autocomplete="off"
+                        maxlength="10"
+                        class="txtBox"
+                        placeholder="User Name"
+                      />
+                    </div>
+
+                    <div class="cf">
+                      <span class="input_title"></span>
+                      <input
+                        id="Password1"
+                        tabindex="2"
+                        name="txtPWD"
+                        type="password"
+                        autocomplete="off"
+                        maxlength="10"
+                        class="txtBox"
+                        placeholder="Password"
+                      />
+                    </div>
+                    <div class="login-btn-wrapper">
+                      <button
+                        type="button"
+                        class="login-btn"
+                        onclick="location.href = '../html/employer-dashoard.html';"
+                      >
+                        Login
+                      </button>
+                    </div>
+
+                    <ul class="login--links cf">
+                      <li>
+                        <a
+                          href="https://access.allstatebenefits.com/RequestUsername.asp"
+                          class="Tahoma12Orange"
+                          >Forgot Username?</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://access.allstatebenefits.com/RequestPassword.asp"
+                          class="Tahoma12Orange"
+                          >Forgot Password?</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://access.allstatebenefits.com/Troubleshoot.asp"
+                          class="Tahoma12Orange"
+                          >Trouble logging in?</a
+                        >
+                      </li>
+                    </ul>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="ctq-wrapper">
+            <div class="ctq-title">
+              Committed To Quality
+            </div>
+            <div class="ctq-content">
+              Allstate Benefits recognizes the value of providing our Benefit
+              Managers with tools to quickly and accurately manage their AB
+              business. The EasyBill Online website is designed to do just that.
+              We are committed to building a quality relationship with all of
+              our customers and to continue offering new and innovative tools
+              that make doing business with AB easier.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container wrapper">
+        <!-- Return to Top -->
+        <span id="return-to-top" style="display: none;"
+          ><i class="icon icon--back--to--top"></i
+        ></span>
+        <div class="row grid footer-grid">
+          <div class="col-12 cc center-cc">
+            &copy; 2020 Allstate Benefits.
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

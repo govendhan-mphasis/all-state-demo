@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Home Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <link href="../css/common.css" rel="stylesheet" />
+
+    <link href="../css/landingHeader.css" rel="stylesheet" />
+
+    <link href="../css/footer.css" rel="stylesheet" />
+    <link href="../css/requestQuote.css" rel="stylesheet" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container wrapper">
+        <div class="row grid header-grid">
+          <div class="col-2">
+            <a
+              href="https://www.allstatebenefits.com/Home"
+              title="Go to Home page."
+              class="logo"
+            >
+              <img
+                src="../images/Allstate_Logo_Header.png"
+                alt="Allstate Benefits"
+              />
+            </a>
+          </div>
+          <div class="col-2">
+            <div class="portal-header">
+              <span class="header-slash">/</span>
+              <span>Broker Portal</span>
+            </div>
+          </div>
+          <div class="col-8">
+            <ul class="primaryNav clearfix">
+              <li>
+                <a href="https://www.allstatebenefits.com/About/Index"
+                  ><img src="../images/Header_Search_Icon2.png"
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.allstatebenefits.com/Contact"
+                  ><img src="../images/Header_Email_Icon.png"
+                /></a>
+              </li>
+
+              <li class="search_container">
+                <a href="https://www.allstatebenefits.com/About/Index"
+                  ><img src="../images/Header_Alert_Icon.png"
+                /></a>
+              </li>
+              <li class="search_container">
+                <a href="https://www.allstatebenefits.com/About/Index"
+                  ><img src="../images/header_user_roger.png" />
+                  <span class="user-blk">
+                    <span class="welcome"> Welcome</span>
+                    <span class="user">Roger at Gallagher</span>
+                  </span>
+                  <span class="dots3"
+                    ><img src="../images/Icon_3Dots.png"
+                  /></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="req-quote-title-container">
+      <div class="container">
+        <div class="row title-brok">
+          <div class="col-4">Request for a Quote</div>
+          <div class="col-8 simple-ban-img"></div>
+        </div>
+      </div>
+    </div>
+    <div class="req-quote-container">
+      <div class="container">
+        <div class="row req-qot-blk req-qot-blk-lst ">
+          <div class="col-12">
+            <div class="req-qot-box">
+              <div class="req-qot-box-title"></div>
+              <div class="req-qot-box-content">
+                <div class="req-qot-search-form-wrapper">
+                  <div class="req-qot-search--form">
+                    <div class="row">
+                      <div class="col-4">
+                        <label class="req-qot-lab">Entity Name</label>
+                        <input
+                          type="text"
+                          id="e-name"
+                          class=""
+                          onkeyup=""
+                          value="Loose Screws Inc."
+                          title="Type in a name"
+                        />
+                      </div>
+                      <div class="col-7">
+                        <label class="req-qot-lab">Type of Business</label>
+                        <select class="">
+                          <option
+                            >Manufacturing – Screws and Fasteners for Wearable
+                            Electronics (SIC Code: 3670)</option
+                          >
+                        </select>
+                      </div>
+                    </div>
+                    <div class="row req-qot-frm-row">
+                      <div class="col-4">
+                        <label class="req-qot-lab">Contact Number</label>
+                        <input
+                          type="text"
+                          id="c-num"
+                          class=""
+                          onkeyup=""
+                          value="(212) 3333.4444"
+                          title="enter contact number"
+                        />
+                      </div>
+                      <div class="col-4">
+                        <label class="req-qot-lab">Company Location</label>
+                        <input
+                          type="text"
+                          id="c-location"
+                          class=""
+                          onkeyup=""
+                          value="King of Prussia"
+                          title="enter contact location"
+                        />
+                      </div>
+                      <div class="col-3">
+                        <label class="req-qot-lab">State</label>
+                        <select class="">
+                          <option>PA</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="row req-qot-frm-row">
+                      <div class="col-4">
+                        <label class="req-qot-lab"
+                          >Number of Lives Covered</label
+                        >
+                        <input
+                          type="text"
+                          id="num-life"
+                          class=""
+                          onkeyup=""
+                          value="500"
+                          title="Type in a name"
+                        />
+                      </div>
+                      <div class="col-3">
+                        <label class="req-qot-lab">Group Plans</label>
+                        <div class="custom-control custom-checkbox mb-3 mt-2">
+                          <input
+                            type="checkbox"
+                            checked
+                            class="custom-control-input"
+                            id="ee-plan"
+                            name="ee-plan"
+                          />
+                          <label
+                            class="checkLbl custom-control-label"
+                            for="ee-plan"
+                            >Engineers and Executive Plan</label
+                          >
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <label class="req-qot-lab"></label>
+                        <div class="custom-control custom-checkbox mb-3 mt-2">
+                          <input
+                            type="checkbox"
+                            class="custom-control-input"
+                            id="pw-plan"
+                            name="pw-plan"
+                          />
+                          <label
+                            class="checkLbl custom-control-label"
+                            for="pw-plan"
+                            >Plant Workers Plan</label
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row req-qot-frm-row">
+                      <div class="req-qot-box-title">List of Products</div>
+                    </div>
+                    <div class="row req-qot-frm-row">
+                      <div class="col-8  req-qot-table-blk">
+                        <div class="row req-qot-row-table">
+                          <div class="col-12">
+                            <div
+                              class="custom-control custom-checkbox mb-3 mt-2"
+                            >
+                              <input
+                                type="checkbox"
+                                checked
+                                class="custom-control-input"
+                                id="GCI_MP"
+                                name="GCI_MP"
+                              />
+                              <label
+                                class="checkLbl custom-control-label"
+                                for="GCI_MP"
+                                ><span class="ck-sp-1">GCI_MP</span
+                                ><span class="ck-sp"
+                                  >Group Critical Illnes</span
+                                ></label
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row req-qot-row-table">
+                          <div class="col-12">
+                            <div
+                              class="custom-control custom-checkbox mb-3 mt-2"
+                            >
+                              <input
+                                type="checkbox"
+                                checked
+                                class="custom-control-input"
+                                id="STD"
+                                name="STD"
+                              />
+                              <label
+                                class="checkLbl custom-control-label"
+                                for="STD"
+                                ><span class="ck-sp-1">STD</span
+                                ><span class="ck-sp"
+                                  >Group Short Term Disability</span
+                                ></label
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row req-qot-row-table">
+                          <div class="col-12">
+                            <div
+                              class="custom-control custom-checkbox mb-3 mt-2"
+                            >
+                              <input
+                                type="checkbox"
+                                checked
+                                class="custom-control-input"
+                                id="GVAP6"
+                                name="GVAP6"
+                              />
+                              <label
+                                class="checkLbl custom-control-label"
+                                for="GVAP6"
+                                ><span class="ck-sp-1">GVAP6</span
+                                ><span class="ck-sp"
+                                  >Voluntary Group Accident</span
+                                ></label
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row req-qot-row-table">
+                          <div class="col-12">
+                            <div
+                              class="custom-control custom-checkbox mb-3 mt-2"
+                            >
+                              <input
+                                type="checkbox"
+                                checked
+                                class="custom-control-input"
+                                id="GVCIP4"
+                                name="GVCIP4"
+                              />
+                              <label
+                                class="checkLbl custom-control-label"
+                                for="GVCIP4"
+                                ><span class="ck-sp-1">GVCIP4</span
+                                ><span class="ck-sp"
+                                  >Voluntary Group Critical Illnes</span
+                                ></label
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row req-qot-row-table">
+                          <div class="col-12">
+                            <div
+                              class="custom-control custom-checkbox mb-3 mt-2"
+                            >
+                              <input
+                                type="checkbox"
+                                checked
+                                class="custom-control-input"
+                                id="GIM2"
+                                name="GIM2"
+                              />
+                              <label
+                                class="checkLbl custom-control-label"
+                                for="GIM2"
+                                ><span class="ck-sp-1">GIM2</span
+                                ><span class="ck-sp"
+                                  >Voluntary Group Hospital Indemnity</span
+                                ></label
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row req-qot-row-table">
+                          <div class="col-12">
+                            <div
+                              class="custom-control custom-checkbox mb-3 mt-2"
+                            >
+                              <input
+                                type="checkbox"
+                                checked
+                                class="custom-control-input"
+                                id="VLA"
+                                name="VLA"
+                              />
+                              <label
+                                class="checkLbl custom-control-label"
+                                for="VLA"
+                                ><span class="ck-sp-1">VLA</span
+                                ><span class="ck-sp"
+                                  >Voluntary Group Life and AD&D</span
+                                ></label
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="submitBlk">
+                <button class="sub-btn" type="button" onclick="setStore()">
+                  Submit Request for Quote
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container wrapper">
+        <!-- Return to Top -->
+        <span id="return-to-top" style="display: none;">
+          <div class="help">
+            <span class="help-content">
+              <span class="help-cont-1">Hello, I am Ella. </span>
+              <span class="help-cont-2">How may I help you? </span>
+            </span>
+          </div>
+        </span>
+        <div class="row grid footer-grid">
+          <div class="col-12 cc center-cc">
+            &copy; 2020 Allstate Benefits.
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function setStore() {
+        console.log("ready!");
+        localStorage.setItem("trigger", true);
+      }
+      // ===== Scroll to Top ====
+      $(window).scroll(function() {
+        if ($(this).scrollTop() >= 100) {
+          // If page is scrolled more than 50px
+          $("#return-to-top").show(); // Fade in the arrow
+        } else {
+          $("#return-to-top").hide(); // Else fade out the arrow
+        }
+      });
+      $("#return-to-top").click(function() {
+        // When arrow is clicked
+        $("body,html").animate(
+          {
+            scrollTop: 0 // Scroll to top of body
+          },
+          500
+        );
+      });
+    </script>
+  </body>
+</html>

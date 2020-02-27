@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Employee Dashboard Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <link href="../css/common.css" rel="stylesheet" />
+
+    <link href="../css/landingHeader.css" rel="stylesheet" />
+
+    <link href="../css/footer.css" rel="stylesheet" />
+    <link href="../css/employee-dashboard.css" rel="stylesheet" />
+    <link href="../css/demographic-modal.css" rel="stylesheet" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container wrapper">
+        <div class="row grid header-grid">
+          <div class="col-2">
+            <a
+              href="https://www.allstatebenefits.com/Home"
+              title="Go to Home page."
+              class="logo"
+            >
+              <img
+                src="../images/Allstate_Logo_Header.png"
+                alt="Allstate Benefits"
+              />
+            </a>
+          </div>
+          <div class="col-3">
+            <div class="portal-header">
+              <span class="header-slash">/</span>
+              <span>Employee Portal</span>
+            </div>
+          </div>
+          <div class="col-7">
+            <ul class="primaryNav clearfix">
+              <li>
+                <a href="https://www.allstatebenefits.com/About/Index"
+                  ><img src="../images/Header_Search_Icon2.png"
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.allstatebenefits.com/Contact"
+                  ><img src="../images/Header_Email_Icon.png"
+                /></a>
+              </li>
+
+              <li class="search_container">
+                <a href="https://www.allstatebenefits.com/About/Index"
+                  ><img src="../images/Header_Alert_Icon.png"
+                /></a>
+              </li>
+              <li class="search_container">
+                <a href="https://www.allstatebenefits.com/About/Index"
+                  ><img src="../images/header_user_lee.png" />
+                  <span class="user-blk">
+                    <span class="welcome"> Welcome</span>
+                    <span class="user">Lee</span>
+                  </span>
+                  <span class="dots3"
+                    ><img src="../images/Icon_3Dots.png"
+                  /></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="main-container">
+      <div class="container">
+        <div class="row">
+          <div class=" col-12 ella-img-cont">
+            <img class="ella-img" src="../images/chat_img_Ella.png" />
+            <div class="ella-msg">
+              <div>
+                Hello Lee! I am Ella, your virtual assistant. How can I help you
+                today?
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="employee-main-container">
+        <div class="employee-img">
+          <div class="container">
+            <div class="row">
+              <div class="offset-3 col-3 employee-cont">
+                <div class="row emplee-title">
+                  <div class="col-12 ">Critical Illness Employee</div>
+                </div>
+                <div class="row emplee-data ">
+                  <div class="col-6 emplee-data-title">Certificate No.</div>
+                  <div class="col-6 emplee-data-val">4800000501</div>
+                </div>
+                <div class="row emplee-data ">
+                  <div class="col-6 emplee-data-title">Effective Date</div>
+                  <div class="col-6 emplee-data-val">02/05/2019</div>
+                </div>
+                <div class="row emplee-data ">
+                  <div class="col-6 emplee-data-title">Life Insured.</div>
+                  <div class="col-6 emplee-data-val">Bryce Lee</div>
+                </div>
+                <div class="row emplee-data ">
+                  <div class="col-6 emplee-data-title">Status</div>
+                  <div class="col-6 emplee-data-val">
+                    <span class="greenCircle"></span
+                    ><span class="active">Active</span>
+                  </div>
+                </div>
+                <div class="row emplee-email">
+                  <div class="col-2">
+                    <img src="../images/email_icon_large.png" />
+                    <div class="numberCircle">
+                      <div class="numCircleNum">6</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 employee-access">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="row dashed-icn-wrapper">
+                      <div class="col-3 dashed-icn-blk">
+                        <a href="#">
+                          <div class="dashed-icn-img">
+                            <img
+                              src="../images/icon_view_policy_benefits.png"
+                            />
+                          </div>
+                          <div class="dashed-icn-label">
+                            View Policy Benefits
+                          </div>
+                        </a>
+                      </div>
+                      <div class="col-3 dashed-icn-blk">
+                        <a href="#"
+                          ><div class="dashed-icn-img">
+                            <img src="../images/icon_claims_history.png" />
+                          </div>
+                          <div class="dashed-icn-label">
+                            Claims History
+                          </div>
+                        </a>
+                      </div>
+                      <div class="col-3 dashed-icn-blk">
+                        <a href="#">
+                          <div class="dashed-icn-img">
+                            <img src="../images/icon_file_a_claim.png" />
+                          </div>
+                          <div class="dashed-icn-label">File a Claim</div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="row dashed-icn-wrapper">
+                      <div class="col-3 dashed-icn-blk">
+                        <a
+                          href="demographic.html"
+                          data-target="#demographicModal"
+                          data-toggle="modal"
+                        >
+                          <div class="dashed-icn-img">
+                            <img src="../images/icon_demographic_data.png" />
+                          </div>
+                          <div class="dashed-icn-label">
+                            Update Demographic Data
+                          </div>
+                        </a>
+                      </div>
+                      <div class="col-3 dashed-icn-blk">
+                        <a href="#">
+                          <div class="dashed-icn-img">
+                            <img
+                              src="../images/icon_view_certificate_details.png"
+                            />
+                          </div>
+                          <div class="dashed-icn-label">
+                            View Certificate Details
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container wrapper">
+        <div class="row grid footer-grid">
+          <div class="col-12 cc center-cc">
+            &copy; 2020 Allstate Benefits.
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- demographic -->
+    <div
+      class="allstate-modal modal fade"
+      id="demographicModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="demographicModal"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Demographic Data</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true"
+                ><img src="../images/icon_close.png"
+              /></span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  id="home-tab"
+                  data-toggle="tab"
+                  href="#home"
+                  role="tab"
+                  aria-controls="home"
+                  aria-selected="true"
+                  ><img
+                    src="../images/icon_personal_info.png"
+                    class="tab-ico"
+                  /><span>Personal Information</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="profile-tab"
+                  data-toggle="tab"
+                  href="#profile"
+                  role="tab"
+                  aria-controls="profile"
+                  aria-selected="false"
+                  ><img
+                    src="../images/icon_bank_details.png"
+                    class="tab-ico"
+                  /><span>Bank Details</span></a
+                >
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div
+                class="tab-pane fade show active"
+                id="home"
+                role="tabpanel"
+                aria-labelledby="home-tab"
+              >
+                <form>
+                  <section>
+                    <span class="section-title">General Information</span>
+                    <div class="form-row">
+                      <div class="form-group col-md-4">
+                        <label for="fName">First Name</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="fName"
+                          placeholder="Bryce"
+                        />
+                      </div>
+                      <div class="form-group col-md-4">
+                        <label for="mName">Middle Name</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="mName"
+                          placeholder=""
+                        />
+                      </div>
+                      <div class="form-group col-md-4">
+                        <label for="lName">Last Name</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="lName"
+                          placeholder="Lee"
+                        />
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-4">
+                        <label for="nationality">Nationality</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="nationality"
+                          placeholder="American"
+                        />
+                      </div>
+                      <div class="form-group col-md-4">
+                        <label for="gender">Gender</label>
+                        <select id="gender" class="form-control">
+                          <option selected>Male</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-md-4">
+                        <label for="national-id">National ID/SSN</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="national-id"
+                          placeholder="XXXXXXXXX"
+                        />
+                      </div>
+                    </div>
+                  </section>
+                  <section>
+                    <span class="section-title">Address</span>
+                    <section class="sub-section">
+                      <span class="section-subtitle">Primary Address</span>
+                      <div class="form-row">
+                        <div class="form-group col-md-4">
+                          <label for="address1">Address Line 1</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="address1"
+                            placeholder="101 E Lake Avenue"
+                          />
+                        </div>
+                        <div class="form-group col-md-4">
+                          <label for="address2">Address Line 2</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="address2"
+                            placeholder=""
+                          />
+                        </div>
+                        <div class="form-group col-md-2">
+                          <label for="zipcode">Zip Code</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="zipcode"
+                            placeholder="21212"
+                          />
+                        </div>
+                        <div class="form-group col-md-2">
+                          <label for="city">City</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="city"
+                            placeholder="Baltimore"
+                          />
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="form-group col-md-4">
+                          <label for="state">State</label>
+                          <select id="state" class="form-control">
+                            <option selected>Maryland</option>
+                          </select>
+                        </div>
+                        <div class="form-group col-md-4">
+                          <label for="country">Country</label>
+                          <select id="country" class="form-control">
+                            <option selected>United States</option>
+                          </select>
+                        </div>
+                      </div>
+                    </section>
+                    <section class="sub-section">
+                      <span class="section-subtitle">Secondary Address</span>
+                      <div class="form-row">
+                        <div class="form-group col-md-4">
+                          <label for="sec-address1">Address Line 1</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="sec-address1"
+                            placeholder="20A Green Shade Avenue"
+                          />
+                        </div>
+                        <div class="form-group col-md-4">
+                          <label for="sec-address2">Address Line 2</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="sec-address2"
+                            placeholder=""
+                          />
+                        </div>
+                        <div class="form-group col-md-2">
+                          <label for="sec-zipcode">Zip Code</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="sec-zipcode"
+                            placeholder="20020"
+                          />
+                        </div>
+                        <div class="form-group col-md-2">
+                          <label for="sec-city">City</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="sec-city"
+                            placeholder="Washington, DC."
+                          />
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="form-group col-md-4">
+                          <label for="sec-state">State</label>
+                          <select id="sec-state" class="form-control">
+                            <option selected>Columbia</option>
+                          </select>
+                        </div>
+                        <div class="form-group col-md-4">
+                          <label for="sec-country">Country</label>
+                          <select id="sec-country" class="form-control">
+                            <option selected>United States</option>
+                          </select>
+                        </div>
+                      </div>
+                    </section>
+                  </section>
+                  <section>
+                    <span class="section-title">Phone</span>
+                    <div class="form-row">
+                      <div class="form-group col-md-4">
+                        <label for="res-phone">Residence Phone</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="res-phone"
+                          placeholder="1-410-509-6995"
+                        />
+                      </div>
+                      <div class="form-group col-md-4">
+                        <label for="mobile-num">Mobile Number</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="mobile-num"
+                          placeholder="1-410-509-6995"
+                        />
+                      </div>
+                    </div>
+                  </section>
+                  <section>
+                    <span class="section-title">Email ID</span>
+                    <div class="form-row">
+                      <div class="form-group col-md-4">
+                        <label for="prime-email">Primary Email ID</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="prime-email"
+                          placeholder="primary.email@example.com"
+                        />
+                      </div>
+                      <div class="form-group col-md-4">
+                        <label for="sec-email">Secondary Email ID</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="sec-email"
+                          placeholder="secondary.email@example.com"
+                        />
+                      </div>
+                    </div>
+                  </section>
+                </form>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="profile"
+                role="tabpanel"
+                aria-labelledby="profile-tab"
+              >
+                <form>
+                  <div class="form-row">
+                    <div class="form-group col-md-4">
+                      <label for="bank-name">Bank Name</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="bank-name"
+                        placeholder="ABC Bank"
+                      />
+                    </div>
+                    <div class="form-group col-md-4">
+                      <label for="bic-code">Swift/BIC Code</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="bic-code"
+                        placeholder="ABC14648XZ"
+                      />
+                    </div>
+                    <div class="form-group col-md-4">
+                      <label for="loc-address">Location Address</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="loc-address"
+                        placeholder="374 Fictitious Street, Sample Name Avenue"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-4">
+                      <label for="country">Country</label>
+                      <select id="country" class="form-control">
+                        <option selected>France</option>
+                      </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                      <label for="iban">IBAN</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="country"
+                        placeholder="FR 12 12345 12345 768976546A0 01"
+                      />
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="btns-wrapper">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Cancel
+              </button>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-dismiss="modal"
+              >
+                Save changes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

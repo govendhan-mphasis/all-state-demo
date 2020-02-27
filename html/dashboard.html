@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Broker Dashboard Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <link href="../css/common.css" rel="stylesheet" />
+
+    <link href="../css/landingHeader.css" rel="stylesheet" />
+
+    <link href="../css/footer.css" rel="stylesheet" />
+    <link href="../css/dashboard.css" rel="stylesheet" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container wrapper">
+        <div class="row grid header-grid">
+          <div class="col-2">
+            <a
+              href="https://www.allstatebenefits.com/Home"
+              title="Go to Home page."
+              class="logo"
+            >
+              <img
+                src="../images/Allstate_Logo_Header.png"
+                alt="Allstate Benefits"
+              />
+            </a>
+          </div>
+          <div class="col-2">
+            <div class="portal-header">
+              <span class="header-slash">/</span>
+              <span>Broker Portal</span>
+            </div>
+          </div>
+          <div class="col-8">
+            <ul class="primaryNav clearfix">
+              <li>
+                <a href="https://www.allstatebenefits.com/About/Index"
+                  ><img src="../images/Header_Search_Icon2.png"
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.allstatebenefits.com/Contact"
+                  ><img src="../images/Header_Email_Icon.png"
+                /></a>
+              </li>
+
+              <li class="search_container">
+                <a href="https://www.allstatebenefits.com/About/Index"
+                  ><img src="../images/Header_Alert_Icon.png"
+                /></a>
+              </li>
+              <li class="search_container">
+                <a href="https://www.allstatebenefits.com/About/Index"
+                  ><img src="../images/header_user_roger.png" />
+                  <span class="user-blk">
+                    <span class="welcome"> Welcome</span>
+                    <span class="user">Roger at Gallagher</span>
+                  </span>
+                  <span class="dots3"
+                    ><img src="../images/Icon_3Dots.png"
+                  /></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="navigation">
+      <div class="container">
+        <nav>
+          <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+            <a
+              class="nav-item nav-link active"
+              id="nav-dashboard-tab"
+              data-toggle="tab"
+              href="#nav-dashboard"
+              role="tab"
+              aria-controls="nav-dashboard"
+              aria-selected="true"
+            >
+              <span class="tab-img">
+                <img src="../images/Tab_Dashboard_Icon.png"
+              /></span>
+              <span class="tab-title">Dashboard</span>
+            </a>
+            <a
+              class="nav-item nav-link"
+              id="nav-products-tab"
+              data-toggle="tab"
+              href="#nav-products"
+              role="tab"
+              aria-controls="nav-products"
+              aria-selected="false"
+            >
+              <span class="tab-img">
+                <img src="../images/Header_Products_Icon.png"
+              /></span>
+              <span class="tab-title">Products</span>
+            </a>
+            <a
+              class="nav-item nav-link"
+              id="nav-commissions-tab"
+              data-toggle="tab"
+              href="#nav-commissions"
+              role="tab"
+              aria-controls="nav-commissions"
+              aria-selected="false"
+            >
+              <span class="tab-img">
+                <img src="../images/Header_Commissions_Icon.png"
+              /></span>
+              <span class="tab-title">Commisions</span>
+            </a>
+            <a
+              class="nav-item nav-link"
+              id="nav-renewals-tab"
+              data-toggle="tab"
+              href="#nav-renewals"
+              role="tab"
+              aria-controls="nav-renewals"
+              aria-selected="false"
+            >
+              <span class="tab-img">
+                <img src="../images/Header_Renewals_Icon.png"
+              /></span>
+              <span class="tab-title">Renewals</span>
+            </a>
+            <a
+              class="nav-item nav-link"
+              id="nav-reports-tab"
+              data-toggle="tab"
+              href="#nav-reports"
+              role="tab"
+              aria-controls="nav-reports"
+              aria-selected="false"
+            >
+              <span class="tab-img">
+                <img src="../images/Header_Reports_Icon.png"
+              /></span>
+              <span class="tab-title">Reports</span>
+            </a>
+          </div>
+        </nav>
+        <div class="tab-content  py-3 px-3 px-sm-0" id="nav-tabContent">
+          <div
+            class="tab-pane fade show active"
+            id="nav-dashboard"
+            role="tabpanel"
+            aria-labelledby="nav-dashboard-tab"
+          >
+            <div class="dashboard-container container">
+              <div class="row dash-blk">
+                <div class="col-3">
+                  <div class="dash-box">
+                    <div class="dash-box-title">
+                      Book of Business (71)
+                    </div>
+                    <div class="dash-box-content">
+                      <div class="dash-box-meter dash-box-pre-green">
+                        <div class="dash-box-meter-unit">1-100</div>
+                        <div class="dash-box-meter-value">25</div>
+                      </div>
+                      <div class="dash-box-meter dash-box-pre-red">
+                        <div class="dash-box-meter-unit">100-10,000</div>
+                        <div class="dash-box-meter-value">42</div>
+                      </div>
+                      <div class="dash-box-meter dash-box-pre-blue">
+                        <div class="dash-box-meter-unit">10,000+</div>
+                        <div class="dash-box-meter-value">4</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-5">
+                  <div class="dash-box">
+                    <div class="dash-box-title">
+                      Direct Written Premium - DWP ($145.3)
+                    </div>
+                    <div class="dash-box-content">
+                      <div class="dash-box-pie">
+                        <img src="../images/Piechart_img.png" />
+                      </div>
+                      <div class="row">
+                        <div class="col-4 dash-box-pie-cont">
+                          <div class="dash-box-col-volume">1-100</div>
+                          <div class="dash-box-col-price dash-box-bot-blue">
+                            $9.3 M
+                          </div>
+                        </div>
+                        <div class="col-4 dash-box-pie-cont">
+                          <div class="dash-box-col-volume">100-10,000</div>
+                          <div class="dash-box-col-price dash-box-bot-red">
+                            $126 M
+                          </div>
+                        </div>
+                        <div class="col-4 dash-box-pie-cont">
+                          <div class="dash-box-col-volume">10,000+</div>
+                          <div class="dash-box-col-price dash-box-bot-green">
+                            $10 M
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="dash-box">
+                    <div class="dash-box-title">
+                      Commissions ($K)
+                    </div>
+                    <div class="dash-box-content">
+                      <div class="row dash-box-bar-cont">
+                        <div class="col-4">
+                          <div class="dash-box-bar-val">
+                            34.2
+                          </div>
+                        </div>
+                        <div class="col-8">
+                          <div class="dash-box-bar-perc">
+                            <span
+                              ><img src="../images/Arrow_Up_Icon.png"
+                            /></span>
+                            <span class="dash-box-bar-perc-val"
+                              >+12.7 (37.13%)</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <div class="dash-box-bar">
+                        <img src="../images/Bar_Chart.png" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row dash-blk">
+                <div class="col-6">
+                  <div class="dash-box quote-wrap">
+                    <div class="dash-box-title">
+                      Quotes
+                    </div>
+                    <div class="dash-box-content">
+                      <div class="row">
+                        <div class="col-4">
+                          <span class="q-img"
+                            ><img src="../images/Icon_Quotes_Started.png"
+                          /></span>
+                          <span class="q-cont">
+                            <span class="q-pro">Started</span>
+                            <span class="q-val">6</span>
+                          </span>
+                        </div>
+                        <div class="col-4 bor-left bor-right">
+                          <span class="q-img"
+                            ><img src="../images/Icon_Quotes_Submitted.png"
+                          /></span>
+                          <span class="q-cont">
+                            <span class="q-pro">Submitted</span>
+                            <span class="q-val">6</span>
+                          </span>
+                        </div>
+                        <div class="col-4">
+                          <span class="q-img"
+                            ><img src="../images/Icon_Quotes_Closed.png"
+                          /></span>
+                          <span class="q-cont">
+                            <span class="q-pro">Closed</span>
+                            <span class="q-val">9</span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="dash-box renewal-wrap">
+                    <div class="dash-box-title">
+                      Renewals (60)
+                    </div>
+                    <div class="dash-box-content">
+                      <div class="row">
+                        <div class="col-4">
+                          <span class="q-img"
+                            ><img src="../images/Icon_Calendar.png"
+                          /></span>
+                          <span class="q-cont">
+                            <span class="q-pro">90 Days</span>
+                            <span class="q-val">10</span>
+                          </span>
+                        </div>
+                        <div class="col-4 bor-left bor-right">
+                          <span class="q-img"
+                            ><img src="../images/Icon_Calendar.png"
+                          /></span>
+                          <span class="q-cont">
+                            <span class="q-pro">60 Days</span>
+                            <span class="q-val">33</span>
+                          </span>
+                        </div>
+                        <div class="col-4">
+                          <span class="q-img"
+                            ><img src="../images/Icon_Calendar.png"
+                          /></span>
+                          <span class="q-cont">
+                            <span class="q-pro">30 Days</span>
+                            <span class="q-val">17</span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row dash-blk">
+                <div class="col-9">
+                  <div class="dash-box">
+                    <div class="dash-box-title">
+                      Manage Employers
+                    </div>
+                    <div class="dash-box-content ">
+                      <div class="dash-search-form-wrapper">
+                        <div class="dash-search--form">
+                          <input
+                            type="text"
+                            id="search-box"
+                            class="txtBox"
+                            onkeyup="searchFunction()"
+                            placeholder="Filter by Client ID or Name"
+                            title="Type in a name"
+                          />
+                        </div>
+                      </div>
+                      <div class="table-content ">
+                        <table class="table table-hover" id="employers-table">
+                          <thead>
+                            <tr>
+                              <th class="t-th">LEGAL NAME</th>
+                              <th class="t-th">DBA</th>
+                              <th class="t-th">SITUS STATE</th>
+                              <th class="t-th">CLIENT ID</th>
+                              <th class="t-th">
+                                INDUSTRY CLASSIFICATION
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td><a href="#">ABC Company</a></td>
+                              <td>ABC</td>
+                              <td>CO</td>
+                              <td>0000000097</td>
+                              <td>SIC US - 0182</td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <a href="../html/loose-scews.html"
+                                  >Loose Screws</a
+                                >
+                              </td>
+                              <td>LOOSE SWS</td>
+                              <td>MN</td>
+                              <td>0000000081</td>
+                              <td>SIC US - 0259</td>
+                            </tr>
+                            <tr>
+                              <td><a href="#">ABC Manufacturing</a></td>
+                              <td>ABC MFG</td>
+                              <td>CO</td>
+                              <td>0000000104</td>
+                              <td>SIC US - 1541</td>
+                            </tr>
+                            <tr>
+                              <td><a href="#">Joe’s Bagel Place</a></td>
+                              <td>Joe’s Bagel Place</td>
+                              <td>IL</td>
+                              <td>0000000078</td>
+                              <td>SIC US - 5461</td>
+                            </tr>
+                            <tr>
+                              <td><a href="#">Johnson Tire Company</a></td>
+                              <td>Johnson Tire Company</td>
+                              <td>CO</td>
+                              <td>0000000079</td>
+                              <td>SIC US - 5531</td>
+                            </tr>
+                            <tr>
+                              <td><a href="#">Miller’s Construction</a></td>
+                              <td>Miller’s Construction</td>
+                              <td>MN</td>
+                              <td>0000000077</td>
+                              <td>SIC US - 1521</td>
+                            </tr>
+                            <tr>
+                              <td><a href="#">Polis Company</a></td>
+                              <td>Polis</td>
+                              <td>CO</td>
+                              <td>0000000097</td>
+                              <td>SIC US - 0182</td>
+                            </tr>
+                            <tr>
+                              <td><a href="#">Pizza Store</a></td>
+                              <td>Pizza Str</td>
+                              <td>MN</td>
+                              <td>0000000081</td>
+                              <td>SIC US - 0259</td>
+                            </tr>
+                            <tr>
+                              <td><a href="#">Univel Manufacturing</a></td>
+                              <td>Univel MFG</td>
+                              <td>CO</td>
+                              <td>0000000104</td>
+                              <td>SIC US - 1541</td>
+                            </tr>
+                            <tr>
+                              <td><a href="#">Music Store</a></td>
+                              <td>Music Str</td>
+                              <td>IL</td>
+                              <td>0000000078</td>
+                              <td>SIC US - 5461</td>
+                            </tr>
+                            <tr>
+                              <td><a href="#">Pizza Store</a></td>
+                              <td>Pizza Str</td>
+                              <td>MN</td>
+                              <td>0000000081</td>
+                              <td>SIC US - 0259</td>
+                            </tr>
+                            <tr>
+                              <td><a href="#">Univel Manufacturing</a></td>
+                              <td>Univel MFG</td>
+                              <td>CO</td>
+                              <td>0000000104</td>
+                              <td>SIC US - 1541</td>
+                            </tr>
+                            <tr>
+                              <td><a href="#">Music Store</a></td>
+                              <td>Music Str</td>
+                              <td>IL</td>
+                              <td>0000000078</td>
+                              <td>SIC US - 5461</td>
+                            </tr>
+                            <tr>
+                              <td><a href="#">Pizza Store</a></td>
+                              <td>Pizza Str</td>
+                              <td>MN</td>
+                              <td>0000000081</td>
+                              <td>SIC US - 0259</td>
+                            </tr>
+                            <tr>
+                              <td><a href="#">Univel Manufacturing</a></td>
+                              <td>Univel MFG</td>
+                              <td>CO</td>
+                              <td>0000000104</td>
+                              <td>SIC US - 1541</td>
+                            </tr>
+                            <tr>
+                              <td><a href="#">Music Store</a></td>
+                              <td>Music Str</td>
+                              <td>IL</td>
+                              <td>0000000078</td>
+                              <td>SIC US - 5461</td>
+                            </tr>
+                            <tr>
+                              <td><a href="#">Pizza Store</a></td>
+                              <td>Pizza Str</td>
+                              <td>MN</td>
+                              <td>0000000081</td>
+                              <td>SIC US - 0259</td>
+                            </tr>
+                            <tr>
+                              <td><a href="#">Univel Manufacturing</a></td>
+                              <td>Univel MFG</td>
+                              <td>CO</td>
+                              <td>0000000104</td>
+                              <td>SIC US - 1541</td>
+                            </tr>
+                            <tr>
+                              <td><a href="#">Music Store</a></td>
+                              <td>Music Str</td>
+                              <td>IL</td>
+                              <td>0000000078</td>
+                              <td>SIC US - 5461</td>
+                            </tr>
+                            <tr>
+                              <td><a href="#">Pizza Store</a></td>
+                              <td>Pizza Str</td>
+                              <td>MN</td>
+                              <td>0000000081</td>
+                              <td>SIC US - 0259</td>
+                            </tr>
+                            <tr>
+                              <td><a href="#">Univel Manufacturing</a></td>
+                              <td>Univel MFG</td>
+                              <td>CO</td>
+                              <td>0000000104</td>
+                              <td>SIC US - 1541</td>
+                            </tr>
+                            <tr>
+                              <td><a href="#">Music Store</a></td>
+                              <td>Music Str</td>
+                              <td>IL</td>
+                              <td>0000000078</td>
+                              <td>SIC US - 5461</td>
+                            </tr>
+                            <tr>
+                              <td><a href="#">Pizza Store</a></td>
+                              <td>Pizza Str</td>
+                              <td>MN</td>
+                              <td>0000000081</td>
+                              <td>SIC US - 0259</td>
+                            </tr>
+                            <tr>
+                              <td><a href="#">Univel Manufacturing</a></td>
+                              <td>Univel MFG</td>
+                              <td>CO</td>
+                              <td>0000000104</td>
+                              <td>SIC US - 1541</td>
+                            </tr>
+                            <tr>
+                              <td><a href="#">Music Store</a></td>
+                              <td>Music Str</td>
+                              <td>IL</td>
+                              <td>0000000078</td>
+                              <td>SIC US - 5461</td>
+                            </tr>
+                            <tr>
+                              <td><a href="#">Pizza Store</a></td>
+                              <td>Pizza Str</td>
+                              <td>MN</td>
+                              <td>0000000081</td>
+                              <td>SIC US - 0259</td>
+                            </tr>
+                            <tr>
+                              <td><a href="#">Univel Manufacturing</a></td>
+                              <td>Univel MFG</td>
+                              <td>CO</td>
+                              <td>0000000104</td>
+                              <td>SIC US - 1541</td>
+                            </tr>
+                            <tr>
+                              <td><a href="#">Music Store</a></td>
+                              <td>Music Str</td>
+                              <td>IL</td>
+                              <td>0000000078</td>
+                              <td>SIC US - 5461</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="dash-box">
+                    <div class="dash-box-title communication-title">
+                      <div class="row">
+                        <div class="col-7 comm-text">Communications</div>
+                        <div class="col-1 act-text">Activities</div>
+                      </div>
+                    </div>
+                    <div class="dash-box-content communication-content">
+                      <div class="row communication-wrap">
+                        <div class="col-1">
+                          <img
+                            class="ver-aln-mid"
+                            src="../images/Icon_Right_Arrow.png"
+                          />
+                        </div>
+                        <div class="col-8">
+                          <div class="com-tit">Quote Approval</div>
+                          <div class="com-date">12/02/2020</div>
+                        </div>
+                        <div class="col-2">
+                          <img
+                            class="ver-aln-mid"
+                            src="../images/Icon_Communications_eMail.png"
+                          />
+                        </div>
+                      </div>
+                      <div class="row communication-wrap">
+                        <div class="col-1">
+                          <img
+                            class="ver-aln-mid"
+                            src="../images/Icon_Right_Arrow.png"
+                          />
+                        </div>
+                        <div class="col-8">
+                          <div class="com-tit">Billing Inquiry</div>
+                          <div class="com-date">10/02/2020</div>
+                        </div>
+                        <div class="col-2">
+                          <img
+                            class="ver-aln-mid"
+                            src="../images/Icon_Communications_Phone.png"
+                          />
+                        </div>
+                      </div>
+                      <div class="row communication-wrap">
+                        <div class="col-1">
+                          <img
+                            class="ver-aln-mid"
+                            src="../images/Icon_Right_Arrow.png"
+                          />
+                        </div>
+                        <div class="col-8">
+                          <div class="com-tit">Renewal Notice</div>
+                          <div class="com-date">08/02/2020</div>
+                        </div>
+                        <div class="col-2">
+                          <img
+                            class="ver-aln-mid"
+                            src="../images/Icon_Communications_Renewal.png"
+                          />
+                        </div>
+                      </div>
+                      <div class="row communication-wrap">
+                        <div class="col-1">
+                          <img
+                            class="ver-aln-mid"
+                            src="../images/Icon_Right_Arrow.png"
+                          />
+                        </div>
+                        <div class="col-8">
+                          <div class="com-tit">Billing Inquiry</div>
+                          <div class="com-date">03/02/2020</div>
+                        </div>
+                        <div class="col-2">
+                          <img
+                            class="ver-aln-mid"
+                            src="../images/Icon_Communications_Phone.png"
+                          />
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 view-all text-right">
+                          <a href="#">View All</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="nav-products"
+            role="tabpanel"
+            aria-labelledby="nav-products-tab"
+          >
+            Products
+          </div>
+          <div
+            class="tab-pane fade"
+            id="nav-commissions"
+            role="tabpanel"
+            aria-labelledby="nav-commissions-tab"
+          >
+            Commisions
+          </div>
+          <div
+            class="tab-pane fade"
+            id="nav-renewals"
+            role="tabpanel"
+            aria-labelledby="nav-renewals-tab"
+          >
+            Renewals
+          </div>
+          <div
+            class="tab-pane fade"
+            id="nav-reports"
+            role="tabpanel"
+            aria-labelledby="nav-reports-tab"
+          >
+            Reports
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container wrapper">
+        <!-- Return to Top -->
+        <span id="return-to-top" style="display: none;">
+          <div class="help">
+            <span class="help-content">
+              <span class="help-cont-1">Hello, I am Ella. </span>
+              <span class="help-cont-2">How may I help you? </span>
+            </span>
+          </div>
+        </span>
+        <div class="row grid footer-grid">
+          <div class="col-12 cc center-cc">
+            &copy; 2020 Allstate Benefits.
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // ===== Scroll to Top ====
+      $(window).scroll(function() {
+        if ($(this).scrollTop() >= 100) {
+          // If page is scrolled more than 50px
+          $("#return-to-top").show(); // Fade in the arrow
+        } else {
+          $("#return-to-top").hide(); // Else fade out the arrow
+        }
+      });
+      $("#return-to-top").click(function() {
+        // When arrow is clicked
+        $("body,html").animate(
+          {
+            scrollTop: 0 // Scroll to top of body
+          },
+          500
+        );
+      });
+
+      function searchFunction() {
+        var input, filter, table, tr, td, td2, i, txtValue, txtValue2;
+        input = document.getElementById("search-box");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("employers-table");
+        tr = table.getElementsByTagName("tr");
+        for (i = 0; i < tr.length; i++) {
+          td = tr[i].getElementsByTagName("td")[0];
+          td2 = tr[i].getElementsByTagName("td")[3];
+          console.log(td, td2);
+          if (td && td2) {
+            txtValue = td.textContent || td.innerText;
+            txtValue2 = td2.textContent || td2.innerText;
+            if (
+              txtValue.toUpperCase().indexOf(filter) > -1 ||
+              txtValue2.toUpperCase().indexOf(filter) > -1
+            ) {
+              tr[i].style.display = "";
+            } else {
+              tr[i].style.display = "none";
+            }
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

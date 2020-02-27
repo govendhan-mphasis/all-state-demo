@@ -1,0 +1,96 @@
+.employer-banner-wrapper {
+  height: 456px;
+  position: relative;
+  width: 100%;
+  background-color: #515151;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+.employer-banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.employer-landing-banner {
+  background-image: url(../images/inner_pg_hero_img_employer.png);
+  /* //background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("photographer.jpg"); */
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 0;
+}
+
+.employer-landing-banner-container {
+  margin-top: 2rem;
+}
+
+.emplr-banner-title {
+  font-family: Roboto;
+  font-size: 32px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #333333;
+  padding: 1rem 0;
+
+  line-height: normal;
+
+  text-align: left;
+  color: #b52673;
+}
+
+.emplr-banner-sub-title {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #333333;
+  padding: 1rem 10rem 1rem 0;
+  line-height: normal;
+
+  text-align: left;
+  color: #666666;
+}
+
+.numberCircle {
+  border-radius: 50%;
+  width: 0.5rem;
+  height: 0.5rem;
+  padding: 8px;
+  background: #b52673;
+  border: 2px solid #b52673;
+  color: #fff;
+  text-align: center;
+  font: 15px Arial, sans-serif;
+  margin: -2.5rem 3.5rem;
+  position: absolute;
+}
+
+.numCircleNum {
+  margin: -0.5rem;
+  font-family: Roboto;
+  font-size: 11px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}
