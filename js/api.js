@@ -20,8 +20,8 @@ function getclaimerdetails() {
     success: function(data) {
       $(".certificateNo-node").text(data.certificateNo);
       $(".effectiveDate-node").text(data.effectiveDate);
-      $(".lifeInsured-node").text(data.lifeInsured);
-      $(".status-node").text(data.status);
+      //$(".lifeInsured-node").text(data.lifeInsured);
+      // $(".status-node").text(data.status);
       //      alert(JSON.stringify(data));
     },
     failure: function(errMsg) {

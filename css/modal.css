@@ -4,6 +4,7 @@
 
 .modal-content {
   background: #e8e8e8;
+  font-family: roboto;
 }
 
 .modal-dialog {
@@ -98,6 +99,13 @@
   background: #fbfbfb;
   padding: 30px;
 }
+.td-200 {
+  width: 200px;
+}
+
+.td-130 {
+  width: 130px;
+}
 
 .btn {
   height: 60px;
@@ -106,6 +114,7 @@
   padding: 0 3.826rem;
   font-size: 18px;
   box-shadow: none !important;
+  font-family: roboto;
 }
 
 .btn-secondary {
