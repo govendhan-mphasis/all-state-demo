@@ -180,7 +180,10 @@
                 <div class="row">
                   <div class="col-4">
                     <div class="ls-icn-blk">
-                      <a href="../html/requestQuote.html">
+                      <a
+                        class="req-quote-link"
+                        href="../html/requestQuote.html"
+                      >
                         <div class="ls-icn-img ls-icn-rq">
                           <img
                             class="req-quote-img"
@@ -332,6 +335,11 @@
             "../images/icon_enrolment_statistics.png"
           );
           $(".req-quote-label").text("Enrollment Statistics");
+          $(".req-quote-link").attr(
+            "href",
+            "https://app.powerbi.com/groups/me/apps/a9334e7d-8e1c-4af5-83c9-e14b2ad75110/reports/9d36ee04-b472-4d99-8014-4bbdd6db9199/ReportSection3df6f32b2f7946a9b930?ctid=665b6c62-7310-4d39-9abb-32a0cbc3b90f"
+          );
+          $(".req-quote-link").attr("target", "_blank");
           localStorage.setItem("trigger", false);
         } else {
           $(".sub-quote").text("Submmission of Quote - Pending");
@@ -340,6 +348,8 @@
             "../images/Icon_Request_For_Quote.png"
           );
           $(".req-quote-label").text("Request for Quote");
+          $(".req-quote-link").attr("href", "../html/requestQuote.html");
+          $(".req-quote-link").attr("target", "");
         }
       });
       // ===== Scroll to Top ====
