@@ -4,64 +4,20 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Employee Dashboard Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-<script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
- <script type="text/javascript">
-      function makeSaveChanges() {
-        var reqBody = {
-          address1: $("#address1").val(),
-          address2: $("#address2").val(),
-          zipcode: $("#zipcode").val(),
-          city: $("#city").val()
-        };
+    <link rel="stylesheet" href="../library/bootstrap.min.css" />
+    <script src="../library/jquery-3.4.1.min.js"></script>
+    <script src="../library/popper.min.js"></script>
+    <script src="../library/bootstrap.min.js"></script>
+    <link href="../library/roboto.css" rel="stylesheet" />
 
-        $.ajax({
-          type: "POST",
-          url: "localhost:3000/makesave",
-          // The key needs to match your method's input parameter (case-sensitive).
-          data: JSON.stringify(reqBody),
-          cache: false, 
-          contentType: "application/json; charset=utf-8",
-          dataType: "json",
-                      crossDomain:true,
-
-           headers: {
-            'Access-Control-Allow-Origin': '*',
-          },
-          success: function(data) {
-            alert(data);
-          },
-          failure: function(errMsg) {
-            alert(errMsg);
-          }
-        });
-      }
-    </script>    <link href="../css/common.css" rel="stylesheet" />
+    <script src="../js/api.js"></script>
+    <link href="../css/common.css" rel="stylesheet" />
 
     <link href="../css/landingHeader.css" rel="stylesheet" />
 
     <link href="../css/footer.css" rel="stylesheet" />
     <link href="../css/employee-dashboard.css" rel="stylesheet" />
     <link href="../css/modal.css" rel="stylesheet" />
-
     <link
       href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&display=swap"
       rel="stylesheet"
@@ -72,11 +28,7 @@
       <div class="container wrapper">
         <div class="row grid header-grid">
           <div class="col-2">
-            <a
-              href="https://www.allstatebenefits.com/Home"
-              title="Go to Home page."
-              class="logo"
-            >
+            <a href="/allstatedemo" title="Go to Home page." class="logo">
               <img
                 src="../images/Allstate_Logo_Header.png"
                 alt="Allstate Benefits"
@@ -92,23 +44,17 @@
           <div class="col-7">
             <ul class="primaryNav clearfix">
               <li>
-                <a href="https://www.allstatebenefits.com/About/Index"
-                  ><img src="../images/Header_Search_Icon2.png"
-                /></a>
+                <a href="#"><img src="../images/Header_Search_Icon2.png"/></a>
               </li>
               <li>
-                <a href="https://www.allstatebenefits.com/Contact"
-                  ><img src="../images/Header_Email_Icon.png"
-                /></a>
+                <a href="#"><img src="../images/Header_Email_Icon.png"/></a>
               </li>
 
               <li class="search_container">
-                <a href="https://www.allstatebenefits.com/About/Index"
-                  ><img src="../images/Header_Alert_Icon.png"
-                /></a>
+                <a href="#"><img src="../images/Header_Alert_Icon.png"/></a>
               </li>
               <li class="search_container">
-                <a href="https://www.allstatebenefits.com/About/Index"
+                <a href="#"
                   ><img src="../images/header_user_lee.png" />
                   <span class="user-blk">
                     <span class="welcome"> Welcome</span>
@@ -148,21 +94,27 @@
                 </div>
                 <div class="row emplee-data ">
                   <div class="col-6 emplee-data-title">Certificate No.</div>
-                  <div class="col-6 emplee-data-val">4800000501</div>
+                  <div class="col-6 emplee-data-val certificateNo-node">
+                    4800000501
+                  </div>
                 </div>
                 <div class="row emplee-data ">
                   <div class="col-6 emplee-data-title">Effective Date</div>
-                  <div class="col-6 emplee-data-val">02/05/2019</div>
+                  <div class="col-6 emplee-data-val effectiveDate-node">
+                    02/05/2019
+                  </div>
                 </div>
                 <div class="row emplee-data ">
                   <div class="col-6 emplee-data-title">Life Insured.</div>
-                  <div class="col-6 emplee-data-val">Bryce Lee</div>
+                  <div class="col-6 emplee-data-val lifeInsured-node">
+                    Bryce Lee
+                  </div>
                 </div>
                 <div class="row emplee-data ">
                   <div class="col-6 emplee-data-title">Status</div>
                   <div class="col-6 emplee-data-val">
                     <span class="greenCircle"></span
-                    ><span class="active">Active</span>
+                    ><span class="active status-node">Active</span>
                   </div>
                 </div>
                 <div class="row emplee-email">
@@ -397,7 +349,7 @@
                             type="text"
                             class="form-control"
                             id="address1"
-                            value="101 E Lake Avenue"
+                            value="MAIN STREET LANE"
                           />
                         </div>
                         <div class="form-group col-md-4">
@@ -415,7 +367,7 @@
                             type="text"
                             class="form-control"
                             id="zipcode"
-                            value="21212"
+                            value="10011"
                           />
                         </div>
                         <div class="form-group col-md-2">
@@ -424,7 +376,7 @@
                             type="text"
                             class="form-control"
                             id="city"
-                            value="Baltimore"
+                            value="New York"
                           />
                         </div>
                       </div>
@@ -432,7 +384,7 @@
                         <div class="form-group col-md-4">
                           <label for="state">State</label>
                           <select id="state" class="form-control">
-                            <option selected>Maryland</option>
+                            <option selected>New York</option>
                           </select>
                         </div>
                         <div class="form-group col-md-4">
@@ -759,31 +711,77 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td>000101</td>
-                    <td>Brycee Lee</td>
-                    <td>Heart Attack</td>
-                    <td>Open</td>
+                    <td class="claimantNumber1-node">000101</td>
+                    <td class="claimant1-node">Bryce Lee</td>
+                    <td class="typeOfLoss1-node">Heart Attack</td>
+                    <td class="status1-node">Open</td>
                     <td class="text-left">&nbsp;</td>
                   </tr>
                   <tr>
-                    <td>000102</td>
-                    <td>Brycee Lee</td>
-                    <td>Wellness</td>
-                    <td>Declined</td>
+                    <td class="claimantNumber2-node">000102</td>
+                    <td class="claimant2-node">Bryce Lee</td>
+                    <td class="typeOfLoss2-node">Wellness</td>
+                    <td class="status2-node">Declined</td>
                     <td class="text-left">&nbsp;</td>
                   </tr>
                   <tr>
-                    <td>000103</td>
-                    <td>Brycee Lee</td>
-                    <td>Stroke</td>
-                    <td>Closed</td>
+                    <td class="claimantNumber3-node">000103</td>
+                    <td class="claimant3-node">Bryce Lee</td>
+                    <td class="typeOfLoss3-node">Stroke</td>
+                    <td class="status3-node">Closed</td>
                     <td class="text-left">
-                      <img src="../images/icon_PDF.png" />&nbsp;
-                      <small>23kb</small>
+                      <a
+                        target="_blank"
+                        href="../pdf/Claim Disbursement Letter - Explanation of Benefit_02-27-2020.pdf"
+                        ><img src="../images/icon_PDF.png"/></a
+                      >&nbsp;
+                      <small style="vertical-align: super;">23kb</small>
                     </td>
                   </tr>
                 </tbody>
               </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div
+      class="allstate-modal modal fade"
+      id="successUpdateModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="successUpdateModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="success-img-tick">
+            <img src="../images/icon_success_tick.png" />
+          </div>
+
+          <div class="modal-header">
+            <h5 class="modal-title" id="successUpdateModalLabel">
+              Success
+            </h5>
+          </div>
+          <div class="modal-body customModal4 text-center">
+            <div class="billingPyamentsGrid">
+              <div class="success-content">
+                <div>
+                  Your Information was updated successfully!
+                </div>
+              </div>
+              <div class="btns-wrapper mb-2">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
             </div>
           </div>
         </div>

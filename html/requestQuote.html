@@ -4,33 +4,18 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Home Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
+    <link rel="stylesheet" href="../library/bootstrap.min.css" />
+    <script src="../library/jquery-3.4.1.min.js"></script>
+    <script src="../library/popper.min.js"></script>
+    <script src="../library/bootstrap.min.js"></script>
+    <link href="../library/roboto.css" rel="stylesheet" />
     <link href="../css/common.css" rel="stylesheet" />
 
     <link href="../css/landingHeader.css" rel="stylesheet" />
 
     <link href="../css/footer.css" rel="stylesheet" />
     <link href="../css/requestQuote.css" rel="stylesheet" />
+    <link href="../css/modal.css" rel="stylesheet" />
 
     <link
       href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&display=swap"
@@ -42,11 +27,7 @@
       <div class="container wrapper">
         <div class="row grid header-grid">
           <div class="col-2">
-            <a
-              href="https://www.allstatebenefits.com/Home"
-              title="Go to Home page."
-              class="logo"
-            >
+            <a href="/allstatedemo" title="Go to Home page." class="logo">
               <img
                 src="../images/Allstate_Logo_Header.png"
                 alt="Allstate Benefits"
@@ -62,23 +43,17 @@
           <div class="col-8">
             <ul class="primaryNav clearfix">
               <li>
-                <a href="https://www.allstatebenefits.com/About/Index"
-                  ><img src="../images/Header_Search_Icon2.png"
-                /></a>
+                <a href="#"><img src="../images/Header_Search_Icon2.png"/></a>
               </li>
               <li>
-                <a href="https://www.allstatebenefits.com/Contact"
-                  ><img src="../images/Header_Email_Icon.png"
-                /></a>
+                <a href="#"><img src="../images/Header_Email_Icon.png"/></a>
               </li>
 
               <li class="search_container">
-                <a href="https://www.allstatebenefits.com/About/Index"
-                  ><img src="../images/Header_Alert_Icon.png"
-                /></a>
+                <a href="#"><img src="../images/Header_Alert_Icon.png"/></a>
               </li>
               <li class="search_container">
-                <a href="https://www.allstatebenefits.com/About/Index"
+                <a href="#"
                   ><img src="../images/header_user_roger.png" />
                   <span class="user-blk">
                     <span class="welcome"> Welcome</span>
@@ -223,7 +198,6 @@
                             >
                               <input
                                 type="checkbox"
-                                checked
                                 class="custom-control-input"
                                 id="GCI_MP"
                                 name="GCI_MP"
@@ -246,7 +220,6 @@
                             >
                               <input
                                 type="checkbox"
-                                checked
                                 class="custom-control-input"
                                 id="STD"
                                 name="STD"
@@ -315,7 +288,6 @@
                             >
                               <input
                                 type="checkbox"
-                                checked
                                 class="custom-control-input"
                                 id="GIM2"
                                 name="GIM2"
@@ -338,7 +310,6 @@
                             >
                               <input
                                 type="checkbox"
-                                checked
                                 class="custom-control-input"
                                 id="VLA"
                                 name="VLA"
@@ -360,7 +331,13 @@
                 </div>
               </div>
               <div class="submitBlk">
-                <button class="sub-btn" type="button" onclick="setStore()">
+                <button
+                  class="sub-btn"
+                  type="button"
+                  data-target="#successModal"
+                  data-toggle="modal"
+                  onclick="setStore()"
+                >
                   Submit Request for Quote
                 </button>
               </div>
@@ -387,11 +364,57 @@
         </div>
       </div>
     </footer>
+    <!-- Modal 4 -->
+    <div
+      class="allstate-modal modal fade"
+      id="successModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="successModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="success-img-tick">
+            <img src="../images/icon_success_tick.png" />
+          </div>
 
+          <div class="modal-header">
+            <h5 class="modal-title" id="successModalLabel">
+              Success
+            </h5>
+          </div>
+          <div class="modal-body customModal4 text-center">
+            <div class="billingPyamentsGrid">
+              <div class="success-content">
+                <div>
+                  Your request for Quote has been submitted successfully!
+                </div>
+              </div>
+              <div class="btns-wrapper mb-2">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-dismiss="modal"
+                  onclick="goBack()"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script>
       function setStore() {
         console.log("ready!");
         localStorage.setItem("trigger", true);
+      }
+
+      function goBack() {
+        //history.go(-1);
+        window.location.href = "/allstatedemo/html/loose-scews.html";
       }
       // ===== Scroll to Top ====
       $(window).scroll(function() {

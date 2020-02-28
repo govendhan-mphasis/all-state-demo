@@ -285,3 +285,27 @@ select.form-control {
   text-align: center;
   color: #666666;
 }
+
+#successModalLabel,
+#successUpdateModalLabel {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.success-img-tick {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: -1.5rem;
+}
+.success-content {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+  text-align: center;
+  color: #333333;
+  padding: 2rem;
+}
